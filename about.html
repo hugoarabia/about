@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Group 1 - CPPROG04</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="aboutthemain-.css">
+
+    <script>
+      function toggleVisibility(sectionClass, iconId) {
+        var section = document.querySelector('.' + sectionClass);
+        var icon = document.getElementById(iconId);
+
+        section.classList.toggle('show-list');
+        var rotated = section.classList.contains('show-list');
+        var newRotation = rotated ? 90 : 0;
+        icon.style.transform = 'rotate(' + newRotation + 'deg)';
+
+        var maxHeight = rotated ? '1000px' : '25px';
+        section.style.maxHeight = maxHeight;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var group1 = document.querySelector(".group1");
+        var header = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 55) {
+         
+            group1.style.top = "-30px";
+            header.style.top = "0";
+          } else {
+    
+            group1.style.top = "0";
+            header.style.top = "30px";
+          }
+        });
+      });
+
+    </script>
+
+  </head>
+  
+  <body>
+    <div class="group1">
+         
+    </div>
+    <header>  
+      <div class="right-side">
+        <a href="index.html" class="home"><b>Home</b></a>
+        <a href="team.html" class="member"><b>Team</b></a>
+        <a href="lecture.html" class="lecture"><b>Lecture</b></a>
+            <div class="lecture-list">
+              <p>Lecture 1</p>
+              <p>Lecture 2</p>
+              <p>Lecture 3</p>
+            </div>
+        </div>
+        
+      </div>
+      
+    </header>
+    <main>
+      <div class="picture-frame">
+        <img class="picture" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-9/420718616_927836868708440_3275297416811915853_n.png?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=gN_fXDpsuroAX8kMx-B&_nc_ht=scontent.fcrk3-1.fna&oh=03_AdQA5wH2YtFZv7pqFJ-Hydo1oxj3whmKRroI6m7tOJCG2Q&oe=65E076FA"> 
+      </div>
+      <div class="middle">
+        <p class="about">ABOUT</p>
+        <p class="group">Group 1</p>
+        <p class="bottom">Web Developer:Llaneta,Raiceen <!-- Add or just remove this if u want(if removed add margin-top on the .about css file)-->
+        </p>
+      </div>
+    </main>  
+
+    <section class="who">
+      <p>
+        WHO WE ARE
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="inline">
+        <div class="idk">
+          <img class="pic" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-9/422008857_882220973683038_7114723879956635063_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=E_DMq7kBbh8AX8ozrWI&_nc_ht=scontent.fcrk3-1.fna&oh=03_AdSmDrTrIm0AaJpw5cKEJo_kI2IOK7qOy2DWBbE8G4Fu9A&oe=65E03ACB">
+        </div>
+        <div class="role">
+          <b>Main Programmers</b>
+        </div>
+        <div class="description"> 
+          
+          <b>Members of the group who volunteered to develop the website</b><!-- Change this if u want-->
+        </div>
+        <div class="main-programmers">
+          <div class="title">
+            <div class="programmers">Main Programmers</div>
+            <div class="toggle">
+              <img id="icon1" class="icon" src="https://scontent.fcrk3-2.fna.fbcdn.net/v/t1.15752-9/409392310_728064259260017_5639206982830409462_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=ZBgHTvjceX0AX9Z7rAv&_nc_ht=scontent.fcrk3-2.fna&oh=03_AdRZvQesuzamgdtutVBg8-_sAtIVM_4nuEGItLN9DRbFZQ&oe=65E01ACD" onclick="toggleVisibility('main-programmers', 'icon1')">
+            </div>
+          </div>
+            <div class="list">
+            <p>
+              <b>Llaneta, Raiceen</b></br>
+              <b>Arabia,Hugo C</b></br>
+                <b>Parungao, Jerimie J.</b></br>
+                  <b>Cullantes,James Brian A.</b></br>
+                    <b>Legaspi,Roel M.</b
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="inline">
+        <div class="idk">
+          <img class="pic" src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t1.15752-9/422058128_1401624127137947_2906983145926099911_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=zo10jwkaBlMAX_HBGO2&_nc_ht=scontent.fcrk3-1.fna&oh=03_AdQLZhwvSh8LQRM3fWyhLEfRg8nhHcXRwVM5Rb4XrixqDg&oe=65E05A5F">
+        </div>
+        <div class="role">
+          <b>Quiz Masters</b>
+        </div>
+        <div class="description">
+              <b>Members of the group who prepared the questionnaire.</b><!-- Change this if u want-->
+        </div>
+         <div class="quiz-masters">
+          <div class="title2">
+            <div class="quiz-maker">Quiz Masters</div>
+            <div class="toggle2">
+              <img id="icon2" class="icon icon2" src="https://scontent.fcrk3-2.fna.fbcdn.net/v/t1.15752-9/409392310_728064259260017_5639206982830409462_n.png?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=ZBgHTvjceX0AX9Z7rAv&_nc_ht=scontent.fcrk3-2.fna&oh=03_AdRZvQesuzamgdtutVBg8-_sAtIVM_4nuEGItLN9DRbFZQ&oe=65E01ACD" onclick="toggleVisibility('quiz-masters', 'icon2')"> 
+            </div>
+          </div>
+          <div class="list">
+            <div>
+              <p>
+                <b>Altoveros, Wowie D.</b> </br>
+                <b>Aquilino, Bea</b> </br>
+                <b>Atun, David John L.</b> </br>
+                <b>Buhatin, Jecel C.</b> </br>
+                <b>Campo, Ma. Shenel </b></br>
+                <b>Canindo, Achellis Michael M.</b> </br>
+                <b>Chico, Jr. Rober E.</b>  </br>
+                <b>Claraga, Stephen Mae</b>  </br>
+                <b>Dalanon Mariel R.</b> </br>
+                <b>De Luna, Leonel O.</b> </br>
+                <b>Decipolo, Mj P.</b> </br>
+                <b>Deguzman, Daryl Lance T.</b> </br>
+                <b>Dela apaz, John Curl</b>  </br>
+                <b>Dela Cruz, Jerry T.</b> </br>
+                <b>Estrada, Elijan </b></br>
+                <b>Gaspar, Althea</b> </br>
+              </p>
+            </div>
+            <div>
+                <p>
+                  <b>Guiterrez, Allison Joshua</b></br>
+                  <b>Judilla, Shierly Mae</b></br>
+                  <b>Lasona, Ella Joy</b></br>
+                  <b>Lerum, Neil Aldrei F.</b></br>
+                  <b>Maghanoy, Cee Jay</b> </br>
+                  <b>Maligang, Marianie</b> </br>
+                  <b>Manilag, Cristina</b> </br>
+                  <b>Mendoza, Marielle Donasco</b> </br>
+                  <b>Morilla, Mark Joseph M.</b>  </br>
+                  <b>Niño, Jane Lorraine</b> </br>
+                  <b>Nuñuez, Rosalyn</b> </br>
+                  <b>Otico, Michelle S.</b> </br>
+                  <b>Pacaña, Rl</b> </br>
+                  <b>Pedernal, Johnlester P.</b> </br>
+                  <b>Pilar, Prince Jhon Allan A.</b> </br>
+                  <b>Tolentino, Mark Raven C.</b> </br>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </section>
+
+    
+    
+  </body>
+</html>
